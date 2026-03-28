@@ -1,0 +1,31 @@
+sale_id,sale_date,product_name,category,region,city,payment_method,currency,quantity,unit_price
+1,2026-03-01,Shan Noodles,Food,Yangon,Yangon,Cash,MMK,3,2500
+2,2026-03-01,Tea Mix,Beverage,Mandalay,Mandalay,KBZPay,ks,5,1800
+3,2026-03-02,Laphet,Food,Naypyitaw,Naypyitaw,WavePay,Kyat,4,3200
+4,2026-03-02,Coffee Mix,Beverage,Yangon,Yangon,Cash,MMK,6,2200
+5,2026-03-03,Rice Bag,Grocery,Mandalay,Pyin Oo Lwin,Cash,MMK,2,28000
+6,2026-03-03,Cooking Oil,Grocery,Yangon,Bago,KBZPay,mmk,4,13500
+7,2026-03-04,Instant Noodles,Food,Mandalay,Mandalay,WavePay,MMK,10,900
+8,2026-03-04,Soft Drink,Beverage,,Yangon,Cash,ks,8,1200
+9,2026-03-05,Eggs,Grocery,Yangon,Pathein,KBZPay,Kyat,3,7800
+10,2026-03-05,Toothpaste,Household,Mandalay,Monywa,Cash,MMK,7,2500
+11,2026-03-06,Soap,Household,Yangon,Yangon,,MMK,12,1500
+12,2026-03-06,Biscuit,Food,Mandalay,Mandalay,WavePay,ks,9,1100
+13,2026-03-07,Milk Powder,Grocery,Yangon,Taungoo,Cash,MMK,2,16500
+14,2026-03-07,Green Tea,Beverage,Sagaing,Monywa,KBZPay,kyat,4,2100
+15,2026-03-08,Shampoo,Household,Yangon,Yangon,WavePay,MMK,5,5400
+16,2026-03-08,Bottled Water,Beverage,Mandalay,Mandalay,Cash,MMK,15,600
+17,2026-03-09,Notebook,Household,Yangon,Yangon,KBZPay,MMK,6,2000
+18,2026-03-09,Peanut Oil,Grocery,Mandalay,Meiktila,WavePay,ks,3,14500
+19,2026-03-10,Snack Pack,Food,Yangon,Yangon,Cash,MMK,11,1300
+20,2026-03-10,Tea Mix,Beverage,Mandalay,Mandalay,KBZPay,MMK,4,1800
+21,2026-03-11,Laphet,Food,Yangon,Yangon,WavePay,Kyat,5,3200
+22,2026-03-11,Coffee Mix,Beverage,Sagaing,Monywa,Cash,MMK,3,2200
+23,2026-03-12,Rice Bag,Grocery,Yangon,Yangon,KBZPay,MMK,1,28000
+24,2026-03-12,Cooking Oil,Grocery,Mandalay,Mandalay,WavePay,mmk,2,13500
+25,2026-03-13,Instant Noodles,Food,Yangon,Bago,Cash,MMK,14,900
+26,2026-03-13,Soft Drink,Beverage,Mandalay,Mandalay,KBZPay,ks,10,1200
+27,2026-03-14,Eggs,Grocery,Yangon,Pathein,WavePay,Kyat,4,7800
+28,2026-03-14,Toothpaste,Household,Sagaing,Monywa,Cash,MMK,5,2500
+29,2026-03-15,Soap,Household,Yangon,Yangon,KBZPay,MMK,9,1500
+30,2026-03-15,Biscuit,Food,Mandalay,,WavePay,ks,7,1100
