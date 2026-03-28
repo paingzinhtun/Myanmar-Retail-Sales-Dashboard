@@ -6,6 +6,8 @@ This document is a portfolio-style walkthrough of the project. The original quic
 
 This project simulates a retail sales pipeline for a Myanmar shop. It takes raw transaction data from a CSV file, cleans and transforms it with Pandas, stores the results in PostgreSQL, and presents key business metrics in a Streamlit dashboard.
 
+The sample dataset currently covers January 1, 2026 through March 28, 2026 and contains more than 500 sales records, which makes the trends and summaries more realistic for practice.
+
 At a high level, the project covers five stages:
 
 1. Extract raw sales data from a CSV file
@@ -100,7 +102,7 @@ This is the Streamlit application. It reads the processed tables from PostgreSQL
 
 ### [data/raw/sales_data.csv](/C:/Users/HP/Documents/Myn_pipeline/data/raw/sales_data.csv)
 
-This is the raw source dataset. It contains sample Myanmar retail sales data with products, regions, cities, payment methods, quantities, and prices.
+This is the raw source dataset. It contains sample Myanmar retail sales data with products, regions, cities, payment methods, quantities, and prices across more than 500 sales rows.
 
 ## ETL Flow In Detail
 

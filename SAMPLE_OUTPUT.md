@@ -2,6 +2,8 @@
 
 This file shows the kind of output this project produces after the pipeline runs successfully.
 
+The project currently uses a sample dataset with more than 500 sales rows spanning January 1, 2026 to March 28, 2026.
+
 ## 1. Console Output From ETL Run
 
 Example command:
@@ -33,9 +35,9 @@ Sample rows from `sales_cleaned`:
 +---------+------------+------------+--------------+----------+----------+----------+----------+----------------+----------+---------------+-------------+
 | sale_id | sale_date  | product    | category     | region   | city     | payment  | currency | quantity       | unit_mmk | revenue_mmk   |
 +---------+------------+------------+--------------+----------+----------+----------+----------+----------------+----------+---------------+
-| 1       | 2026-03-01 | Shan Noodles | Food       | Yangon   | Yangon   | Cash     | MMK      | 3              | 2500.00  | 7500.00       |
-| 2       | 2026-03-01 | Tea Mix      | Beverage   | Mandalay | Mandalay | Kbzpay   | MMK      | 5              | 1800.00  | 9000.00       |
-| 3       | 2026-03-02 | Laphet       | Food       | Naypyitaw| Naypyitaw| Wavepay  | MMK      | 4              | 3200.00  | 12800.00      |
+| 1       | 2026-01-01 | Tea Mix      | Beverage   | Mandalay | Mandalay | Kbzpay   | MMK      | 3              | 1800.00  | 5400.00       |
+| 2       | 2026-01-01 | Coffee Mix   | Beverage   | Yangon   | Pathein  | Cash     | MMK      | 5              | 2200.00  | 11000.00      |
+| 3       | 2026-01-01 | Cooking Oil  | Grocery    | Mandalay | Meiktila | Wavepay  | MMK      | 7              | 13500.00 | 94500.00      |
 +---------+------------+------------+--------------+----------+----------+----------+----------+----------------+----------+---------------+
 ```
 
@@ -47,9 +49,9 @@ Sample rows from `revenue_daily`:
 +------------+-------------------+--------------+
 | sale_day   | total_revenue_mmk | total_orders |
 +------------+-------------------+--------------+
-| 2026-03-01 | 16500.00          | 2            |
-| 2026-03-02 | 26000.00          | 2            |
-| 2026-03-03 | 110000.00         | 2            |
+| 2026-01-01 | 167800.00         | 6            |
+| 2026-01-02 | 84200.00          | 6            |
+| 2026-01-03 | 128100.00         | 6            |
 +------------+-------------------+--------------+
 ```
 
@@ -61,9 +63,9 @@ Sample rows from `revenue_weekly`:
 +------------+-------------------+--------------+
 | sale_week  | total_revenue_mmk | total_orders |
 +------------+-------------------+--------------+
-| 2026-02-23 | 16500.00          | 2            |
-| 2026-03-02 | 350900.00         | 14           |
-| 2026-03-09 | 267700.00         | 14           |
+| 2025-12-29 | 380100.00         | 24           |
+| 2026-01-05 | 782300.00         | 42           |
+| 2026-01-12 | 737100.00         | 42           |
 +------------+-------------------+--------------+
 ```
 

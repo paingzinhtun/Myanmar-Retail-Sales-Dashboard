@@ -8,6 +8,7 @@ For example outputs and presentation-ready samples, see [SAMPLE_OUTPUT.md](/C:/U
 ## Features
 
 - Extract sales data from a CSV source
+- Work with a 500+ row simulated Myanmar retail sales dataset
 - Clean nulls and standardize currency values into MMK
 - Compute detailed, daily, and weekly revenue metrics
 - Load processed tables into PostgreSQL
@@ -101,5 +102,6 @@ This repository is currently configured for an existing local PostgreSQL install
 ## Notes
 
 - Revenue is standardized into `MMK`
+- The sample CSV now covers January 1, 2026 through March 28, 2026 with more than 500 sales rows
 - The sample CSV includes a few nulls and inconsistent currency labels for cleaning practice
 - The scheduler is intentionally simple so it can be replaced later with Airflow or another orchestrator
