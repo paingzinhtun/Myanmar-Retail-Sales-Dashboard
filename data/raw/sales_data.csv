@@ -1,31 +1,523 @@
 sale_id,sale_date,product_name,category,region,city,payment_method,currency,quantity,unit_price
-1,2026-03-01,Shan Noodles,Food,Yangon,Yangon,Cash,MMK,3,2500
-2,2026-03-01,Tea Mix,Beverage,Mandalay,Mandalay,KBZPay,ks,5,1800
-3,2026-03-02,Laphet,Food,Naypyitaw,Naypyitaw,WavePay,Kyat,4,3200
-4,2026-03-02,Coffee Mix,Beverage,Yangon,Yangon,Cash,MMK,6,2200
-5,2026-03-03,Rice Bag,Grocery,Mandalay,Pyin Oo Lwin,Cash,MMK,2,28000
-6,2026-03-03,Cooking Oil,Grocery,Yangon,Bago,KBZPay,mmk,4,13500
-7,2026-03-04,Instant Noodles,Food,Mandalay,Mandalay,WavePay,MMK,10,900
-8,2026-03-04,Soft Drink,Beverage,,Yangon,Cash,ks,8,1200
-9,2026-03-05,Eggs,Grocery,Yangon,Pathein,KBZPay,Kyat,3,7800
-10,2026-03-05,Toothpaste,Household,Mandalay,Monywa,Cash,MMK,7,2500
-11,2026-03-06,Soap,Household,Yangon,Yangon,,MMK,12,1500
-12,2026-03-06,Biscuit,Food,Mandalay,Mandalay,WavePay,ks,9,1100
-13,2026-03-07,Milk Powder,Grocery,Yangon,Taungoo,Cash,MMK,2,16500
-14,2026-03-07,Green Tea,Beverage,Sagaing,Monywa,KBZPay,kyat,4,2100
-15,2026-03-08,Shampoo,Household,Yangon,Yangon,WavePay,MMK,5,5400
-16,2026-03-08,Bottled Water,Beverage,Mandalay,Mandalay,Cash,MMK,15,600
-17,2026-03-09,Notebook,Household,Yangon,Yangon,KBZPay,MMK,6,2000
-18,2026-03-09,Peanut Oil,Grocery,Mandalay,Meiktila,WavePay,ks,3,14500
-19,2026-03-10,Snack Pack,Food,Yangon,Yangon,Cash,MMK,11,1300
-20,2026-03-10,Tea Mix,Beverage,Mandalay,Mandalay,KBZPay,MMK,4,1800
-21,2026-03-11,Laphet,Food,Yangon,Yangon,WavePay,Kyat,5,3200
-22,2026-03-11,Coffee Mix,Beverage,Sagaing,Monywa,Cash,MMK,3,2200
-23,2026-03-12,Rice Bag,Grocery,Yangon,Yangon,KBZPay,MMK,1,28000
-24,2026-03-12,Cooking Oil,Grocery,Mandalay,Mandalay,WavePay,mmk,2,13500
-25,2026-03-13,Instant Noodles,Food,Yangon,Bago,Cash,MMK,14,900
-26,2026-03-13,Soft Drink,Beverage,Mandalay,Mandalay,KBZPay,ks,10,1200
-27,2026-03-14,Eggs,Grocery,Yangon,Pathein,WavePay,Kyat,4,7800
-28,2026-03-14,Toothpaste,Household,Sagaing,Monywa,Cash,MMK,5,2500
-29,2026-03-15,Soap,Household,Yangon,Yangon,KBZPay,MMK,9,1500
-30,2026-03-15,Biscuit,Food,Mandalay,,WavePay,ks,7,1100
+1,2026-01-01,Tea Mix,Beverage,Mandalay,Mandalay,KBZPay,ks,3,1800
+2,2026-01-01,Coffee Mix,Beverage,Yangon,Pathein,Cash,mmk,5,2200
+3,2026-01-01,Cooking Oil,Grocery,Mandalay,Meiktila,WavePay,ks,7,13500
+4,2026-01-01,Soft Drink,Beverage,Mandalay,Mandalay,KBZPay,mmk,9,1200
+5,2026-01-01,Toothpaste,Household,Yangon,Pathein,Cash,ks,2,2500
+6,2026-01-01,Biscuit,Food,Mandalay,Meiktila,WavePay,mmk,4,1100
+7,2026-01-02,Soft Drink,Beverage,Mandalay,Meiktila,KBZPay,mmk,9,1200
+8,2026-01-02,Toothpaste,Household,Mandalay,Mandalay,Cash,ks,2,2500
+9,2026-01-02,Biscuit,Food,Yangon,Pathein,WavePay,mmk,4,1100
+10,2026-01-02,Green Tea,Beverage,Mandalay,Meiktila,KBZPay,ks,6,2100
+11,2026-01-02,Bottled Water,Beverage,Mandalay,Mandalay,Cash,mmk,8,600
+12,2026-01-02,Peanut Oil,Grocery,Yangon,Pathein,WavePay,ks,10,14500
+13,2026-01-03,Green Tea,Beverage,Yangon,Pathein,KBZPay,ks,6,2100
+14,2026-01-03,Bottled Water,Beverage,Mandalay,Meiktila,Cash,mmk,8,600
+15,2026-01-03,Peanut Oil,Grocery,Mandalay,Mandalay,WavePay,ks,10,14500
+16,2026-01-03,Detergent,Household,Yangon,Pathein,KBZPay,mmk,3,4200
+17,2026-01-03,Tea Mix,Beverage,Mandalay,Meiktila,Cash,ks,5,1800
+18,2026-01-03,Coffee Mix,Beverage,Mandalay,Mandalay,WavePay,mmk,7,2200
+19,2026-01-04,Detergent,Household,Mandalay,Mandalay,KBZPay,mmk,3,4200
+20,2026-01-04,Tea Mix,Beverage,Yangon,Pathein,Cash,ks,5,1800
+21,2026-01-04,Coffee Mix,Beverage,Mandalay,Meiktila,WavePay,mmk,7,2200
+22,2026-01-04,Cooking Oil,Grocery,Mandalay,Mandalay,KBZPay,ks,9,13500
+23,2026-01-04,Soft Drink,Beverage,Yangon,Pathein,Cash,mmk,2,1200
+24,2026-01-04,Toothpaste,Household,Mandalay,Meiktila,WavePay,ks,4,2500
+25,2026-01-05,Cooking Oil,Grocery,Mandalay,Meiktila,KBZPay,ks,9,13500
+26,2026-01-05,Soft Drink,Beverage,Mandalay,Mandalay,Cash,mmk,2,1200
+27,2026-01-05,Toothpaste,Household,Yangon,Pathein,WavePay,ks,4,2500
+28,2026-01-05,Biscuit,Food,Mandalay,Meiktila,KBZPay,mmk,6,1100
+29,2026-01-05,Green Tea,Beverage,Mandalay,Mandalay,Cash,ks,8,2100
+30,2026-01-05,Bottled Water,Beverage,Yangon,Pathein,WavePay,mmk,10,600
+31,2026-01-06,Biscuit,Food,Yangon,Pathein,KBZPay,mmk,6,1100
+32,2026-01-06,Green Tea,Beverage,Mandalay,Meiktila,Cash,ks,8,2100
+33,2026-01-06,Bottled Water,Beverage,Mandalay,Mandalay,WavePay,mmk,10,600
+34,2026-01-06,Peanut Oil,Grocery,Yangon,Pathein,KBZPay,ks,3,14500
+35,2026-01-06,Detergent,Household,Mandalay,Meiktila,Cash,mmk,5,4200
+36,2026-01-06,Tea Mix,Beverage,Mandalay,Mandalay,WavePay,ks,7,1800
+37,2026-01-07,Peanut Oil,Grocery,,Mandalay,KBZPay,ks,3,14500
+38,2026-01-07,Detergent,Household,Yangon,Pathein,Cash,mmk,5,4200
+39,2026-01-07,Tea Mix,Beverage,Mandalay,Meiktila,WavePay,ks,7,1800
+40,2026-01-07,Coffee Mix,Beverage,Mandalay,Mandalay,KBZPay,mmk,9,2200
+41,2026-01-07,Cooking Oil,Grocery,Yangon,Pathein,,ks,2,13500
+42,2026-01-07,Soft Drink,Beverage,Mandalay,Meiktila,WavePay,mmk,4,1200
+43,2026-01-08,Coffee Mix,Beverage,Mandalay,Meiktila,KBZPay,mmk,9,2200
+44,2026-01-08,Cooking Oil,Grocery,Mandalay,Mandalay,Cash,ks,2,13500
+45,2026-01-08,Soft Drink,Beverage,Yangon,Pathein,WavePay,mmk,4,1200
+46,2026-01-08,Toothpaste,Household,Mandalay,Meiktila,KBZPay,ks,6,2500
+47,2026-01-08,Biscuit,Food,Mandalay,Mandalay,Cash,mmk,8,1100
+48,2026-01-08,Green Tea,Beverage,Yangon,Pathein,WavePay,ks,10,2100
+49,2026-01-09,Toothpaste,Household,Yangon,Pathein,KBZPay,ks,6,2500
+50,2026-01-09,Biscuit,Food,Mandalay,Meiktila,Cash,mmk,8,1100
+51,2026-01-09,Green Tea,Beverage,Mandalay,Mandalay,WavePay,ks,10,2100
+52,2026-01-09,Bottled Water,Beverage,Yangon,Pathein,KBZPay,mmk,3,600
+53,2026-01-09,Peanut Oil,Grocery,Mandalay,,Cash,ks,5,14500
+54,2026-01-09,Detergent,Household,Mandalay,Mandalay,WavePay,mmk,7,4200
+55,2026-01-10,Bottled Water,Beverage,Mandalay,Mandalay,KBZPay,mmk,3,600
+56,2026-01-10,Peanut Oil,Grocery,Yangon,Pathein,Cash,ks,5,14500
+57,2026-01-10,Detergent,Household,Mandalay,Meiktila,WavePay,mmk,7,4200
+58,2026-01-10,Tea Mix,Beverage,Mandalay,Mandalay,KBZPay,ks,9,1800
+59,2026-01-10,Coffee Mix,Beverage,Yangon,Pathein,Cash,mmk,2,2200
+60,2026-01-10,Cooking Oil,Grocery,Mandalay,Meiktila,WavePay,ks,4,13500
+61,2026-01-11,Tea Mix,Beverage,Mandalay,Meiktila,KBZPay,ks,9,1800
+62,2026-01-11,Coffee Mix,Beverage,Mandalay,Mandalay,Cash,mmk,2,2200
+63,2026-01-11,Cooking Oil,Grocery,Yangon,Pathein,WavePay,ks,4,13500
+64,2026-01-11,Soft Drink,Beverage,Mandalay,Meiktila,KBZPay,mmk,6,1200
+65,2026-01-11,Toothpaste,Household,Mandalay,Mandalay,Cash,ks,8,2500
+66,2026-01-11,Biscuit,Food,Yangon,Pathein,WavePay,mmk,10,1100
+67,2026-01-12,Soft Drink,Beverage,Yangon,Pathein,KBZPay,mmk,6,1200
+68,2026-01-12,Toothpaste,Household,Mandalay,Meiktila,Cash,ks,8,2500
+69,2026-01-12,Biscuit,Food,Mandalay,Mandalay,WavePay,mmk,10,1100
+70,2026-01-12,Green Tea,Beverage,Yangon,Pathein,KBZPay,ks,3,2100
+71,2026-01-12,Bottled Water,Beverage,Mandalay,Meiktila,Cash,mmk,5,600
+72,2026-01-12,Peanut Oil,Grocery,Mandalay,Mandalay,WavePay,ks,7,14500
+73,2026-01-13,Green Tea,Beverage,Mandalay,Mandalay,KBZPay,ks,3,2100
+74,2026-01-13,Bottled Water,Beverage,,Pathein,Cash,mmk,5,600
+75,2026-01-13,Peanut Oil,Grocery,Mandalay,Meiktila,WavePay,ks,7,14500
+76,2026-01-13,Detergent,Household,Mandalay,Mandalay,KBZPay,mmk,9,4200
+77,2026-01-13,Tea Mix,Beverage,Yangon,Pathein,Cash,ks,2,1800
+78,2026-01-13,Coffee Mix,Beverage,Mandalay,Meiktila,WavePay,mmk,4,2200
+79,2026-01-14,Detergent,Household,Mandalay,Meiktila,KBZPay,mmk,9,4200
+80,2026-01-14,Tea Mix,Beverage,Mandalay,Mandalay,Cash,ks,2,1800
+81,2026-01-14,Coffee Mix,Beverage,Yangon,Pathein,WavePay,mmk,4,2200
+82,2026-01-14,Cooking Oil,Grocery,Mandalay,Meiktila,,ks,6,13500
+83,2026-01-14,Soft Drink,Beverage,Mandalay,Mandalay,Cash,mmk,8,1200
+84,2026-01-14,Toothpaste,Household,Yangon,Pathein,WavePay,ks,10,2500
+85,2026-01-15,Cooking Oil,Grocery,Yangon,Pathein,KBZPay,ks,6,13500
+86,2026-01-15,Soft Drink,Beverage,Mandalay,Meiktila,Cash,mmk,8,1200
+87,2026-01-15,Toothpaste,Household,Mandalay,Mandalay,WavePay,ks,10,2500
+88,2026-01-15,Biscuit,Food,Yangon,Pathein,KBZPay,mmk,3,1100
+89,2026-01-15,Green Tea,Beverage,Mandalay,Meiktila,Cash,ks,5,2100
+90,2026-01-15,Bottled Water,Beverage,Mandalay,Mandalay,WavePay,mmk,7,600
+91,2026-01-16,Biscuit,Food,Mandalay,Mandalay,KBZPay,mmk,3,1100
+92,2026-01-16,Green Tea,Beverage,Yangon,Pathein,Cash,ks,5,2100
+93,2026-01-16,Bottled Water,Beverage,Mandalay,Meiktila,WavePay,mmk,7,600
+94,2026-01-16,Peanut Oil,Grocery,Mandalay,Mandalay,KBZPay,ks,9,14500
+95,2026-01-16,Detergent,Household,Yangon,Pathein,Cash,mmk,2,4200
+96,2026-01-16,Tea Mix,Beverage,Mandalay,Meiktila,WavePay,ks,4,1800
+97,2026-01-17,Peanut Oil,Grocery,Mandalay,Meiktila,KBZPay,ks,9,14500
+98,2026-01-17,Detergent,Household,Mandalay,Mandalay,Cash,mmk,2,4200
+99,2026-01-17,Tea Mix,Beverage,Yangon,Pathein,WavePay,ks,4,1800
+100,2026-01-17,Coffee Mix,Beverage,Mandalay,Meiktila,KBZPay,mmk,6,2200
+101,2026-01-17,Cooking Oil,Grocery,Mandalay,Mandalay,Cash,ks,8,13500
+102,2026-01-17,Soft Drink,Beverage,Yangon,Pathein,WavePay,mmk,10,1200
+103,2026-01-18,Coffee Mix,Beverage,Yangon,Pathein,KBZPay,mmk,6,2200
+104,2026-01-18,Cooking Oil,Grocery,Mandalay,Meiktila,Cash,ks,8,13500
+105,2026-01-18,Soft Drink,Beverage,Mandalay,Mandalay,WavePay,mmk,10,1200
+106,2026-01-18,Toothpaste,Household,Yangon,,KBZPay,ks,3,2500
+107,2026-01-18,Biscuit,Food,Mandalay,Meiktila,Cash,mmk,5,1100
+108,2026-01-18,Green Tea,Beverage,Mandalay,Mandalay,WavePay,ks,7,2100
+109,2026-01-19,Toothpaste,Household,Mandalay,Mandalay,KBZPay,ks,3,2500
+110,2026-01-19,Biscuit,Food,Yangon,Pathein,Cash,mmk,5,1100
+111,2026-01-19,Green Tea,Beverage,,Meiktila,WavePay,ks,7,2100
+112,2026-01-19,Bottled Water,Beverage,Mandalay,Mandalay,KBZPay,mmk,9,600
+113,2026-01-19,Peanut Oil,Grocery,Yangon,Pathein,Cash,ks,2,14500
+114,2026-01-19,Detergent,Household,Mandalay,Meiktila,WavePay,mmk,4,4200
+115,2026-01-20,Bottled Water,Beverage,Mandalay,Meiktila,KBZPay,mmk,9,600
+116,2026-01-20,Peanut Oil,Grocery,Mandalay,Mandalay,Cash,ks,2,14500
+117,2026-01-20,Detergent,Household,Yangon,Pathein,WavePay,mmk,4,4200
+118,2026-01-20,Tea Mix,Beverage,Mandalay,Meiktila,KBZPay,ks,6,1800
+119,2026-01-20,Coffee Mix,Beverage,Mandalay,Mandalay,Cash,mmk,8,2200
+120,2026-01-20,Cooking Oil,Grocery,Yangon,Pathein,WavePay,ks,10,13500
+121,2026-01-21,Tea Mix,Beverage,Yangon,Pathein,KBZPay,ks,6,1800
+122,2026-01-21,Coffee Mix,Beverage,Mandalay,Meiktila,Cash,mmk,8,2200
+123,2026-01-21,Cooking Oil,Grocery,Mandalay,Mandalay,,ks,10,13500
+124,2026-01-21,Soft Drink,Beverage,Yangon,Pathein,KBZPay,mmk,3,1200
+125,2026-01-21,Toothpaste,Household,Mandalay,Meiktila,Cash,ks,5,2500
+126,2026-01-21,Biscuit,Food,Mandalay,Mandalay,WavePay,mmk,7,1100
+127,2026-01-22,Soft Drink,Beverage,Mandalay,Mandalay,KBZPay,mmk,3,1200
+128,2026-01-22,Toothpaste,Household,Yangon,Pathein,Cash,ks,5,2500
+129,2026-01-22,Biscuit,Food,Mandalay,Meiktila,WavePay,mmk,7,1100
+130,2026-01-22,Green Tea,Beverage,Mandalay,Mandalay,KBZPay,ks,9,2100
+131,2026-01-22,Bottled Water,Beverage,Yangon,Pathein,Cash,mmk,2,600
+132,2026-01-22,Peanut Oil,Grocery,Mandalay,Meiktila,WavePay,ks,4,14500
+133,2026-01-23,Green Tea,Beverage,Mandalay,Meiktila,KBZPay,ks,9,2100
+134,2026-01-23,Bottled Water,Beverage,Mandalay,Mandalay,Cash,mmk,2,600
+135,2026-01-23,Peanut Oil,Grocery,Yangon,Pathein,WavePay,ks,4,14500
+136,2026-01-23,Detergent,Household,Mandalay,Meiktila,KBZPay,mmk,6,4200
+137,2026-01-23,Tea Mix,Beverage,Mandalay,Mandalay,Cash,ks,8,1800
+138,2026-01-23,Coffee Mix,Beverage,Yangon,Pathein,WavePay,mmk,10,2200
+139,2026-01-24,Detergent,Household,Yangon,Pathein,KBZPay,mmk,6,4200
+140,2026-01-24,Tea Mix,Beverage,Mandalay,Meiktila,Cash,ks,8,1800
+141,2026-01-24,Coffee Mix,Beverage,Mandalay,Mandalay,WavePay,mmk,10,2200
+142,2026-01-24,Cooking Oil,Grocery,Yangon,Pathein,KBZPay,ks,3,13500
+143,2026-01-24,Soft Drink,Beverage,Mandalay,Meiktila,Cash,mmk,5,1200
+144,2026-01-24,Toothpaste,Household,Mandalay,Mandalay,WavePay,ks,7,2500
+145,2026-01-25,Cooking Oil,Grocery,Mandalay,Mandalay,KBZPay,ks,3,13500
+146,2026-01-25,Soft Drink,Beverage,Yangon,Pathein,Cash,mmk,5,1200
+147,2026-01-25,Toothpaste,Household,Mandalay,Meiktila,WavePay,ks,7,2500
+148,2026-01-25,Biscuit,Food,,Mandalay,KBZPay,mmk,9,1100
+149,2026-01-25,Green Tea,Beverage,Yangon,Pathein,Cash,ks,2,2100
+150,2026-01-25,Bottled Water,Beverage,Mandalay,Meiktila,WavePay,mmk,4,600
+151,2026-01-26,Biscuit,Food,Mandalay,Meiktila,KBZPay,mmk,9,1100
+152,2026-01-26,Green Tea,Beverage,Mandalay,Mandalay,Cash,ks,2,2100
+153,2026-01-26,Bottled Water,Beverage,Yangon,Pathein,WavePay,mmk,4,600
+154,2026-01-26,Peanut Oil,Grocery,Mandalay,Meiktila,KBZPay,ks,6,14500
+155,2026-01-26,Detergent,Household,Mandalay,Mandalay,Cash,mmk,8,4200
+156,2026-01-26,Tea Mix,Beverage,Yangon,Pathein,WavePay,ks,10,1800
+157,2026-01-27,Peanut Oil,Grocery,Yangon,Pathein,KBZPay,ks,6,14500
+158,2026-01-27,Detergent,Household,Mandalay,Meiktila,Cash,mmk,8,4200
+159,2026-01-27,Tea Mix,Beverage,Mandalay,,WavePay,ks,10,1800
+160,2026-01-27,Coffee Mix,Beverage,Yangon,Pathein,KBZPay,mmk,3,2200
+161,2026-01-27,Cooking Oil,Grocery,Mandalay,Meiktila,Cash,ks,5,13500
+162,2026-01-27,Soft Drink,Beverage,Mandalay,Mandalay,WavePay,mmk,7,1200
+163,2026-01-28,Coffee Mix,Beverage,Mandalay,Mandalay,KBZPay,mmk,3,2200
+164,2026-01-28,Cooking Oil,Grocery,Yangon,Pathein,,ks,5,13500
+165,2026-01-28,Soft Drink,Beverage,Mandalay,Meiktila,WavePay,mmk,7,1200
+166,2026-01-28,Toothpaste,Household,Mandalay,Mandalay,KBZPay,ks,9,2500
+167,2026-01-28,Biscuit,Food,Yangon,Pathein,Cash,mmk,2,1100
+168,2026-01-28,Green Tea,Beverage,Mandalay,Meiktila,WavePay,ks,4,2100
+169,2026-01-29,Toothpaste,Household,Mandalay,Meiktila,KBZPay,ks,9,2500
+170,2026-01-29,Biscuit,Food,Mandalay,Mandalay,Cash,mmk,2,1100
+171,2026-01-29,Green Tea,Beverage,Yangon,Pathein,WavePay,ks,4,2100
+172,2026-01-29,Bottled Water,Beverage,Mandalay,Meiktila,KBZPay,mmk,6,600
+173,2026-01-29,Peanut Oil,Grocery,Mandalay,Mandalay,Cash,ks,8,14500
+174,2026-01-29,Detergent,Household,Yangon,Pathein,WavePay,mmk,10,4200
+175,2026-01-30,Bottled Water,Beverage,Yangon,Pathein,KBZPay,mmk,6,600
+176,2026-01-30,Peanut Oil,Grocery,Mandalay,Meiktila,Cash,ks,8,14500
+177,2026-01-30,Detergent,Household,Mandalay,Mandalay,WavePay,mmk,10,4200
+178,2026-01-30,Tea Mix,Beverage,Yangon,Pathein,KBZPay,ks,3,1800
+179,2026-01-30,Coffee Mix,Beverage,Mandalay,Meiktila,Cash,mmk,5,2200
+180,2026-01-30,Cooking Oil,Grocery,Mandalay,Mandalay,WavePay,ks,7,13500
+181,2026-01-31,Tea Mix,Beverage,Mandalay,Mandalay,KBZPay,ks,3,1800
+182,2026-01-31,Coffee Mix,Beverage,Yangon,Pathein,Cash,mmk,5,2200
+183,2026-01-31,Cooking Oil,Grocery,Mandalay,Meiktila,WavePay,ks,7,13500
+184,2026-01-31,Soft Drink,Beverage,Mandalay,Mandalay,KBZPay,mmk,9,1200
+185,2026-01-31,Toothpaste,Household,,Pathein,Cash,ks,2,2500
+186,2026-01-31,Biscuit,Food,Mandalay,Meiktila,WavePay,mmk,4,1100
+187,2026-02-01,Soft Drink,Beverage,Mandalay,Meiktila,KBZPay,mmk,9,1200
+188,2026-02-01,Toothpaste,Household,Mandalay,Mandalay,Cash,ks,2,2500
+189,2026-02-01,Biscuit,Food,Yangon,Pathein,WavePay,mmk,4,1100
+190,2026-02-01,Green Tea,Beverage,Mandalay,Meiktila,KBZPay,ks,6,2100
+191,2026-02-01,Bottled Water,Beverage,Mandalay,Mandalay,Cash,mmk,8,600
+192,2026-02-01,Peanut Oil,Grocery,Yangon,Pathein,WavePay,ks,10,14500
+193,2026-02-02,Green Tea,Beverage,Yangon,Pathein,KBZPay,ks,6,2100
+194,2026-02-02,Bottled Water,Beverage,Mandalay,Meiktila,Cash,mmk,8,600
+195,2026-02-02,Peanut Oil,Grocery,Mandalay,Mandalay,WavePay,ks,10,14500
+196,2026-02-02,Detergent,Household,Yangon,Pathein,KBZPay,mmk,3,4200
+197,2026-02-02,Tea Mix,Beverage,Mandalay,Meiktila,Cash,ks,5,1800
+198,2026-02-02,Coffee Mix,Beverage,Mandalay,Mandalay,WavePay,mmk,7,2200
+199,2026-02-03,Detergent,Household,Mandalay,Mandalay,KBZPay,mmk,3,4200
+200,2026-02-03,Tea Mix,Beverage,Yangon,Pathein,Cash,ks,5,1800
+201,2026-02-03,Coffee Mix,Beverage,Mandalay,Meiktila,WavePay,mmk,7,2200
+202,2026-02-03,Cooking Oil,Grocery,Mandalay,Mandalay,KBZPay,ks,9,13500
+203,2026-02-03,Soft Drink,Beverage,Yangon,Pathein,Cash,mmk,2,1200
+204,2026-02-03,Toothpaste,Household,Mandalay,Meiktila,WavePay,ks,4,2500
+205,2026-02-04,Cooking Oil,Grocery,Mandalay,Meiktila,,ks,9,13500
+206,2026-02-04,Soft Drink,Beverage,Mandalay,Mandalay,Cash,mmk,2,1200
+207,2026-02-04,Toothpaste,Household,Yangon,Pathein,WavePay,ks,4,2500
+208,2026-02-04,Biscuit,Food,Mandalay,Meiktila,KBZPay,mmk,6,1100
+209,2026-02-04,Green Tea,Beverage,Mandalay,Mandalay,Cash,ks,8,2100
+210,2026-02-04,Bottled Water,Beverage,Yangon,Pathein,WavePay,mmk,10,600
+211,2026-02-05,Biscuit,Food,Yangon,Pathein,KBZPay,mmk,6,1100
+212,2026-02-05,Green Tea,Beverage,Mandalay,,Cash,ks,8,2100
+213,2026-02-05,Bottled Water,Beverage,Mandalay,Mandalay,WavePay,mmk,10,600
+214,2026-02-05,Peanut Oil,Grocery,Yangon,Pathein,KBZPay,ks,3,14500
+215,2026-02-05,Detergent,Household,Mandalay,Meiktila,Cash,mmk,5,4200
+216,2026-02-05,Tea Mix,Beverage,Mandalay,Mandalay,WavePay,ks,7,1800
+217,2026-02-06,Peanut Oil,Grocery,Mandalay,Mandalay,KBZPay,ks,3,14500
+218,2026-02-06,Detergent,Household,Yangon,Pathein,Cash,mmk,5,4200
+219,2026-02-06,Tea Mix,Beverage,Mandalay,Meiktila,WavePay,ks,7,1800
+220,2026-02-06,Coffee Mix,Beverage,Mandalay,Mandalay,KBZPay,mmk,9,2200
+221,2026-02-06,Cooking Oil,Grocery,Yangon,Pathein,Cash,ks,2,13500
+222,2026-02-06,Soft Drink,Beverage,,Meiktila,WavePay,mmk,4,1200
+223,2026-02-07,Coffee Mix,Beverage,Mandalay,Meiktila,KBZPay,mmk,9,2200
+224,2026-02-07,Cooking Oil,Grocery,Mandalay,Mandalay,Cash,ks,2,13500
+225,2026-02-07,Soft Drink,Beverage,Yangon,Pathein,WavePay,mmk,4,1200
+226,2026-02-07,Toothpaste,Household,Mandalay,Meiktila,KBZPay,ks,6,2500
+227,2026-02-07,Biscuit,Food,Mandalay,Mandalay,Cash,mmk,8,1100
+228,2026-02-07,Green Tea,Beverage,Yangon,Pathein,WavePay,ks,10,2100
+229,2026-02-08,Toothpaste,Household,Yangon,Pathein,KBZPay,ks,6,2500
+230,2026-02-08,Biscuit,Food,Mandalay,Meiktila,Cash,mmk,8,1100
+231,2026-02-08,Green Tea,Beverage,Mandalay,Mandalay,WavePay,ks,10,2100
+232,2026-02-08,Bottled Water,Beverage,Yangon,Pathein,KBZPay,mmk,3,600
+233,2026-02-08,Peanut Oil,Grocery,Mandalay,Meiktila,Cash,ks,5,14500
+234,2026-02-08,Detergent,Household,Mandalay,Mandalay,WavePay,mmk,7,4200
+235,2026-02-09,Bottled Water,Beverage,Mandalay,Mandalay,KBZPay,mmk,3,600
+236,2026-02-09,Peanut Oil,Grocery,Yangon,Pathein,Cash,ks,5,14500
+237,2026-02-09,Detergent,Household,Mandalay,Meiktila,WavePay,mmk,7,4200
+238,2026-02-09,Tea Mix,Beverage,Mandalay,Mandalay,KBZPay,ks,9,1800
+239,2026-02-09,Coffee Mix,Beverage,Yangon,Pathein,Cash,mmk,2,2200
+240,2026-02-09,Cooking Oil,Grocery,Mandalay,Meiktila,WavePay,ks,4,13500
+241,2026-02-10,Tea Mix,Beverage,Mandalay,Meiktila,KBZPay,ks,9,1800
+242,2026-02-10,Coffee Mix,Beverage,Mandalay,Mandalay,Cash,mmk,2,2200
+243,2026-02-10,Cooking Oil,Grocery,Yangon,Pathein,WavePay,ks,4,13500
+244,2026-02-10,Soft Drink,Beverage,Mandalay,Meiktila,KBZPay,mmk,6,1200
+245,2026-02-10,Toothpaste,Household,Mandalay,Mandalay,Cash,ks,8,2500
+246,2026-02-10,Biscuit,Food,Yangon,Pathein,,mmk,10,1100
+247,2026-02-11,Soft Drink,Beverage,Yangon,Pathein,KBZPay,mmk,6,1200
+248,2026-02-11,Toothpaste,Household,Mandalay,Meiktila,Cash,ks,8,2500
+249,2026-02-11,Biscuit,Food,Mandalay,Mandalay,WavePay,mmk,10,1100
+250,2026-02-11,Green Tea,Beverage,Yangon,Pathein,KBZPay,ks,3,2100
+251,2026-02-11,Bottled Water,Beverage,Mandalay,Meiktila,Cash,mmk,5,600
+252,2026-02-11,Peanut Oil,Grocery,Mandalay,Mandalay,WavePay,ks,7,14500
+253,2026-02-12,Green Tea,Beverage,Mandalay,Mandalay,KBZPay,ks,3,2100
+254,2026-02-12,Bottled Water,Beverage,Yangon,Pathein,Cash,mmk,5,600
+255,2026-02-12,Peanut Oil,Grocery,Mandalay,Meiktila,WavePay,ks,7,14500
+256,2026-02-12,Detergent,Household,Mandalay,Mandalay,KBZPay,mmk,9,4200
+257,2026-02-12,Tea Mix,Beverage,Yangon,Pathein,Cash,ks,2,1800
+258,2026-02-12,Coffee Mix,Beverage,Mandalay,Meiktila,WavePay,mmk,4,2200
+259,2026-02-13,Detergent,Household,,Meiktila,KBZPay,mmk,9,4200
+260,2026-02-13,Tea Mix,Beverage,Mandalay,Mandalay,Cash,ks,2,1800
+261,2026-02-13,Coffee Mix,Beverage,Yangon,Pathein,WavePay,mmk,4,2200
+262,2026-02-13,Cooking Oil,Grocery,Mandalay,Meiktila,KBZPay,ks,6,13500
+263,2026-02-13,Soft Drink,Beverage,Mandalay,Mandalay,Cash,mmk,8,1200
+264,2026-02-13,Toothpaste,Household,Yangon,Pathein,WavePay,ks,10,2500
+265,2026-02-14,Cooking Oil,Grocery,Yangon,,KBZPay,ks,6,13500
+266,2026-02-14,Soft Drink,Beverage,Mandalay,Meiktila,Cash,mmk,8,1200
+267,2026-02-14,Toothpaste,Household,Mandalay,Mandalay,WavePay,ks,10,2500
+268,2026-02-14,Biscuit,Food,Yangon,Pathein,KBZPay,mmk,3,1100
+269,2026-02-14,Green Tea,Beverage,Mandalay,Meiktila,Cash,ks,5,2100
+270,2026-02-14,Bottled Water,Beverage,Mandalay,Mandalay,WavePay,mmk,7,600
+271,2026-02-15,Biscuit,Food,Mandalay,Mandalay,KBZPay,mmk,3,1100
+272,2026-02-15,Green Tea,Beverage,Yangon,Pathein,Cash,ks,5,2100
+273,2026-02-15,Bottled Water,Beverage,Mandalay,Meiktila,WavePay,mmk,7,600
+274,2026-02-15,Peanut Oil,Grocery,Mandalay,Mandalay,KBZPay,ks,9,14500
+275,2026-02-15,Detergent,Household,Yangon,Pathein,Cash,mmk,2,4200
+276,2026-02-15,Tea Mix,Beverage,Mandalay,Meiktila,WavePay,ks,4,1800
+277,2026-02-16,Peanut Oil,Grocery,Mandalay,Meiktila,KBZPay,ks,9,14500
+278,2026-02-16,Detergent,Household,Mandalay,Mandalay,Cash,mmk,2,4200
+279,2026-02-16,Tea Mix,Beverage,Yangon,Pathein,WavePay,ks,4,1800
+280,2026-02-16,Coffee Mix,Beverage,Mandalay,Meiktila,KBZPay,mmk,6,2200
+281,2026-02-16,Cooking Oil,Grocery,Mandalay,Mandalay,Cash,ks,8,13500
+282,2026-02-16,Soft Drink,Beverage,Yangon,Pathein,WavePay,mmk,10,1200
+283,2026-02-17,Coffee Mix,Beverage,Yangon,Pathein,KBZPay,mmk,6,2200
+284,2026-02-17,Cooking Oil,Grocery,Mandalay,Meiktila,Cash,ks,8,13500
+285,2026-02-17,Soft Drink,Beverage,Mandalay,Mandalay,WavePay,mmk,10,1200
+286,2026-02-17,Toothpaste,Household,Yangon,Pathein,KBZPay,ks,3,2500
+287,2026-02-17,Biscuit,Food,Mandalay,Meiktila,,mmk,5,1100
+288,2026-02-17,Green Tea,Beverage,Mandalay,Mandalay,WavePay,ks,7,2100
+289,2026-02-18,Toothpaste,Household,Mandalay,Mandalay,KBZPay,ks,3,2500
+290,2026-02-18,Biscuit,Food,Yangon,Pathein,Cash,mmk,5,1100
+291,2026-02-18,Green Tea,Beverage,Mandalay,Meiktila,WavePay,ks,7,2100
+292,2026-02-18,Bottled Water,Beverage,Mandalay,Mandalay,KBZPay,mmk,9,600
+293,2026-02-18,Peanut Oil,Grocery,Yangon,Pathein,Cash,ks,2,14500
+294,2026-02-18,Detergent,Household,Mandalay,Meiktila,WavePay,mmk,4,4200
+295,2026-02-19,Bottled Water,Beverage,Mandalay,Meiktila,KBZPay,mmk,9,600
+296,2026-02-19,Peanut Oil,Grocery,,Mandalay,Cash,ks,2,14500
+297,2026-02-19,Detergent,Household,Yangon,Pathein,WavePay,mmk,4,4200
+298,2026-02-19,Tea Mix,Beverage,Mandalay,Meiktila,KBZPay,ks,6,1800
+299,2026-02-19,Coffee Mix,Beverage,Mandalay,Mandalay,Cash,mmk,8,2200
+300,2026-02-19,Cooking Oil,Grocery,Yangon,Pathein,WavePay,ks,10,13500
+301,2026-02-20,Tea Mix,Beverage,Yangon,Pathein,KBZPay,ks,6,1800
+302,2026-02-20,Coffee Mix,Beverage,Mandalay,Meiktila,Cash,mmk,8,2200
+303,2026-02-20,Cooking Oil,Grocery,Mandalay,Mandalay,WavePay,ks,10,13500
+304,2026-02-20,Soft Drink,Beverage,Yangon,Pathein,KBZPay,mmk,3,1200
+305,2026-02-20,Toothpaste,Household,Mandalay,Meiktila,Cash,ks,5,2500
+306,2026-02-20,Biscuit,Food,Mandalay,Mandalay,WavePay,mmk,7,1100
+307,2026-02-21,Soft Drink,Beverage,Mandalay,Mandalay,KBZPay,mmk,3,1200
+308,2026-02-21,Toothpaste,Household,Yangon,Pathein,Cash,ks,5,2500
+309,2026-02-21,Biscuit,Food,Mandalay,Meiktila,WavePay,mmk,7,1100
+310,2026-02-21,Green Tea,Beverage,Mandalay,Mandalay,KBZPay,ks,9,2100
+311,2026-02-21,Bottled Water,Beverage,Yangon,Pathein,Cash,mmk,2,600
+312,2026-02-21,Peanut Oil,Grocery,Mandalay,Meiktila,WavePay,ks,4,14500
+313,2026-02-22,Green Tea,Beverage,Mandalay,Meiktila,KBZPay,ks,9,2100
+314,2026-02-22,Bottled Water,Beverage,Mandalay,Mandalay,Cash,mmk,2,600
+315,2026-02-22,Peanut Oil,Grocery,Yangon,Pathein,WavePay,ks,4,14500
+316,2026-02-22,Detergent,Household,Mandalay,Meiktila,KBZPay,mmk,6,4200
+317,2026-02-22,Tea Mix,Beverage,Mandalay,Mandalay,Cash,ks,8,1800
+318,2026-02-22,Coffee Mix,Beverage,Yangon,,WavePay,mmk,10,2200
+319,2026-02-23,Detergent,Household,Yangon,Pathein,KBZPay,mmk,6,4200
+320,2026-02-23,Tea Mix,Beverage,Mandalay,Meiktila,Cash,ks,8,1800
+321,2026-02-23,Coffee Mix,Beverage,Mandalay,Mandalay,WavePay,mmk,10,2200
+322,2026-02-23,Cooking Oil,Grocery,Yangon,Pathein,KBZPay,ks,3,13500
+323,2026-02-23,Soft Drink,Beverage,Mandalay,Meiktila,Cash,mmk,5,1200
+324,2026-02-23,Toothpaste,Household,Mandalay,Mandalay,WavePay,ks,7,2500
+325,2026-02-24,Cooking Oil,Grocery,Mandalay,Mandalay,KBZPay,ks,3,13500
+326,2026-02-24,Soft Drink,Beverage,Yangon,Pathein,Cash,mmk,5,1200
+327,2026-02-24,Toothpaste,Household,Mandalay,Meiktila,WavePay,ks,7,2500
+328,2026-02-24,Biscuit,Food,Mandalay,Mandalay,,mmk,9,1100
+329,2026-02-24,Green Tea,Beverage,Yangon,Pathein,Cash,ks,2,2100
+330,2026-02-24,Bottled Water,Beverage,Mandalay,Meiktila,WavePay,mmk,4,600
+331,2026-02-25,Biscuit,Food,Mandalay,Meiktila,KBZPay,mmk,9,1100
+332,2026-02-25,Green Tea,Beverage,Mandalay,Mandalay,Cash,ks,2,2100
+333,2026-02-25,Bottled Water,Beverage,,Pathein,WavePay,mmk,4,600
+334,2026-02-25,Peanut Oil,Grocery,Mandalay,Meiktila,KBZPay,ks,6,14500
+335,2026-02-25,Detergent,Household,Mandalay,Mandalay,Cash,mmk,8,4200
+336,2026-02-25,Tea Mix,Beverage,Yangon,Pathein,WavePay,ks,10,1800
+337,2026-02-26,Peanut Oil,Grocery,Yangon,Pathein,KBZPay,ks,6,14500
+338,2026-02-26,Detergent,Household,Mandalay,Meiktila,Cash,mmk,8,4200
+339,2026-02-26,Tea Mix,Beverage,Mandalay,Mandalay,WavePay,ks,10,1800
+340,2026-02-26,Coffee Mix,Beverage,Yangon,Pathein,KBZPay,mmk,3,2200
+341,2026-02-26,Cooking Oil,Grocery,Mandalay,Meiktila,Cash,ks,5,13500
+342,2026-02-26,Soft Drink,Beverage,Mandalay,Mandalay,WavePay,mmk,7,1200
+343,2026-02-27,Coffee Mix,Beverage,Mandalay,Mandalay,KBZPay,mmk,3,2200
+344,2026-02-27,Cooking Oil,Grocery,Yangon,Pathein,Cash,ks,5,13500
+345,2026-02-27,Soft Drink,Beverage,Mandalay,Meiktila,WavePay,mmk,7,1200
+346,2026-02-27,Toothpaste,Household,Mandalay,Mandalay,KBZPay,ks,9,2500
+347,2026-02-27,Biscuit,Food,Yangon,Pathein,Cash,mmk,2,1100
+348,2026-02-27,Green Tea,Beverage,Mandalay,Meiktila,WavePay,ks,4,2100
+349,2026-02-28,Toothpaste,Household,Mandalay,Meiktila,KBZPay,ks,9,2500
+350,2026-02-28,Biscuit,Food,Mandalay,Mandalay,Cash,mmk,2,1100
+351,2026-02-28,Green Tea,Beverage,Yangon,Pathein,WavePay,ks,4,2100
+352,2026-02-28,Bottled Water,Beverage,Mandalay,Meiktila,KBZPay,mmk,6,600
+353,2026-02-28,Peanut Oil,Grocery,Mandalay,Mandalay,Cash,ks,8,14500
+354,2026-02-28,Detergent,Household,Yangon,Pathein,WavePay,mmk,10,4200
+355,2026-03-01,Bottled Water,Beverage,Yangon,Pathein,KBZPay,mmk,6,600
+356,2026-03-01,Peanut Oil,Grocery,Mandalay,Meiktila,Cash,ks,8,14500
+357,2026-03-01,Detergent,Household,Mandalay,Mandalay,WavePay,mmk,10,4200
+358,2026-03-01,Tea Mix,Beverage,Yangon,Pathein,KBZPay,ks,3,1800
+359,2026-03-01,Coffee Mix,Beverage,Mandalay,Meiktila,Cash,mmk,5,2200
+360,2026-03-01,Cooking Oil,Grocery,Mandalay,Mandalay,WavePay,ks,7,13500
+361,2026-03-02,Tea Mix,Beverage,Mandalay,Mandalay,KBZPay,ks,3,1800
+362,2026-03-02,Coffee Mix,Beverage,Yangon,Pathein,Cash,mmk,5,2200
+363,2026-03-02,Cooking Oil,Grocery,Mandalay,Meiktila,WavePay,ks,7,13500
+364,2026-03-02,Soft Drink,Beverage,Mandalay,Mandalay,KBZPay,mmk,9,1200
+365,2026-03-02,Toothpaste,Household,Yangon,Pathein,Cash,ks,2,2500
+366,2026-03-02,Biscuit,Food,Mandalay,Meiktila,WavePay,mmk,4,1100
+367,2026-03-03,Soft Drink,Beverage,Mandalay,Meiktila,KBZPay,mmk,9,1200
+368,2026-03-03,Toothpaste,Household,Mandalay,Mandalay,Cash,ks,2,2500
+369,2026-03-03,Biscuit,Food,Yangon,Pathein,,mmk,4,1100
+370,2026-03-03,Green Tea,Beverage,,Meiktila,KBZPay,ks,6,2100
+371,2026-03-03,Bottled Water,Beverage,Mandalay,,Cash,mmk,8,600
+372,2026-03-03,Peanut Oil,Grocery,Yangon,Pathein,WavePay,ks,10,14500
+373,2026-03-04,Green Tea,Beverage,Yangon,Pathein,KBZPay,ks,6,2100
+374,2026-03-04,Bottled Water,Beverage,Mandalay,Meiktila,Cash,mmk,8,600
+375,2026-03-04,Peanut Oil,Grocery,Mandalay,Mandalay,WavePay,ks,10,14500
+376,2026-03-04,Detergent,Household,Yangon,Pathein,KBZPay,mmk,3,4200
+377,2026-03-04,Tea Mix,Beverage,Mandalay,Meiktila,Cash,ks,5,1800
+378,2026-03-04,Coffee Mix,Beverage,Mandalay,Mandalay,WavePay,mmk,7,2200
+379,2026-03-05,Detergent,Household,Mandalay,Mandalay,KBZPay,mmk,3,4200
+380,2026-03-05,Tea Mix,Beverage,Yangon,Pathein,Cash,ks,5,1800
+381,2026-03-05,Coffee Mix,Beverage,Mandalay,Meiktila,WavePay,mmk,7,2200
+382,2026-03-05,Cooking Oil,Grocery,Mandalay,Mandalay,KBZPay,ks,9,13500
+383,2026-03-05,Soft Drink,Beverage,Yangon,Pathein,Cash,mmk,2,1200
+384,2026-03-05,Toothpaste,Household,Mandalay,Meiktila,WavePay,ks,4,2500
+385,2026-03-06,Cooking Oil,Grocery,Mandalay,Meiktila,KBZPay,ks,9,13500
+386,2026-03-06,Soft Drink,Beverage,Mandalay,Mandalay,Cash,mmk,2,1200
+387,2026-03-06,Toothpaste,Household,Yangon,Pathein,WavePay,ks,4,2500
+388,2026-03-06,Biscuit,Food,Mandalay,Meiktila,KBZPay,mmk,6,1100
+389,2026-03-06,Green Tea,Beverage,Mandalay,Mandalay,Cash,ks,8,2100
+390,2026-03-06,Bottled Water,Beverage,Yangon,Pathein,WavePay,mmk,10,600
+391,2026-03-07,Biscuit,Food,Yangon,Pathein,KBZPay,mmk,6,1100
+392,2026-03-07,Green Tea,Beverage,Mandalay,Meiktila,Cash,ks,8,2100
+393,2026-03-07,Bottled Water,Beverage,Mandalay,Mandalay,WavePay,mmk,10,600
+394,2026-03-07,Peanut Oil,Grocery,Yangon,Pathein,KBZPay,ks,3,14500
+395,2026-03-07,Detergent,Household,Mandalay,Meiktila,Cash,mmk,5,4200
+396,2026-03-07,Tea Mix,Beverage,Mandalay,Mandalay,WavePay,ks,7,1800
+397,2026-03-08,Peanut Oil,Grocery,Mandalay,Mandalay,KBZPay,ks,3,14500
+398,2026-03-08,Detergent,Household,Yangon,Pathein,Cash,mmk,5,4200
+399,2026-03-08,Tea Mix,Beverage,Mandalay,Meiktila,WavePay,ks,7,1800
+400,2026-03-08,Coffee Mix,Beverage,Mandalay,Mandalay,KBZPay,mmk,9,2200
+401,2026-03-08,Cooking Oil,Grocery,Yangon,Pathein,Cash,ks,2,13500
+402,2026-03-08,Soft Drink,Beverage,Mandalay,Meiktila,WavePay,mmk,4,1200
+403,2026-03-09,Coffee Mix,Beverage,Mandalay,Meiktila,KBZPay,mmk,9,2200
+404,2026-03-09,Cooking Oil,Grocery,Mandalay,Mandalay,Cash,ks,2,13500
+405,2026-03-09,Soft Drink,Beverage,Yangon,Pathein,WavePay,mmk,4,1200
+406,2026-03-09,Toothpaste,Household,Mandalay,Meiktila,KBZPay,ks,6,2500
+407,2026-03-09,Biscuit,Food,,Mandalay,Cash,mmk,8,1100
+408,2026-03-09,Green Tea,Beverage,Yangon,Pathein,WavePay,ks,10,2100
+409,2026-03-10,Toothpaste,Household,Yangon,Pathein,KBZPay,ks,6,2500
+410,2026-03-10,Biscuit,Food,Mandalay,Meiktila,,mmk,8,1100
+411,2026-03-10,Green Tea,Beverage,Mandalay,Mandalay,WavePay,ks,10,2100
+412,2026-03-10,Bottled Water,Beverage,Yangon,Pathein,KBZPay,mmk,3,600
+413,2026-03-10,Peanut Oil,Grocery,Mandalay,Meiktila,Cash,ks,5,14500
+414,2026-03-10,Detergent,Household,Mandalay,Mandalay,WavePay,mmk,7,4200
+415,2026-03-11,Bottled Water,Beverage,Mandalay,Mandalay,KBZPay,mmk,3,600
+416,2026-03-11,Peanut Oil,Grocery,Yangon,Pathein,Cash,ks,5,14500
+417,2026-03-11,Detergent,Household,Mandalay,Meiktila,WavePay,mmk,7,4200
+418,2026-03-11,Tea Mix,Beverage,Mandalay,Mandalay,KBZPay,ks,9,1800
+419,2026-03-11,Coffee Mix,Beverage,Yangon,Pathein,Cash,mmk,2,2200
+420,2026-03-11,Cooking Oil,Grocery,Mandalay,Meiktila,WavePay,ks,4,13500
+421,2026-03-12,Tea Mix,Beverage,Mandalay,Meiktila,KBZPay,ks,9,1800
+422,2026-03-12,Coffee Mix,Beverage,Mandalay,Mandalay,Cash,mmk,2,2200
+423,2026-03-12,Cooking Oil,Grocery,Yangon,Pathein,WavePay,ks,4,13500
+424,2026-03-12,Soft Drink,Beverage,Mandalay,,KBZPay,mmk,6,1200
+425,2026-03-12,Toothpaste,Household,Mandalay,Mandalay,Cash,ks,8,2500
+426,2026-03-12,Biscuit,Food,Yangon,Pathein,WavePay,mmk,10,1100
+427,2026-03-13,Soft Drink,Beverage,Yangon,Pathein,KBZPay,mmk,6,1200
+428,2026-03-13,Toothpaste,Household,Mandalay,Meiktila,Cash,ks,8,2500
+429,2026-03-13,Biscuit,Food,Mandalay,Mandalay,WavePay,mmk,10,1100
+430,2026-03-13,Green Tea,Beverage,Yangon,Pathein,KBZPay,ks,3,2100
+431,2026-03-13,Bottled Water,Beverage,Mandalay,Meiktila,Cash,mmk,5,600
+432,2026-03-13,Peanut Oil,Grocery,Mandalay,Mandalay,WavePay,ks,7,14500
+433,2026-03-14,Green Tea,Beverage,Mandalay,Mandalay,KBZPay,ks,3,2100
+434,2026-03-14,Bottled Water,Beverage,Yangon,Pathein,Cash,mmk,5,600
+435,2026-03-14,Peanut Oil,Grocery,Mandalay,Meiktila,WavePay,ks,7,14500
+436,2026-03-14,Detergent,Household,Mandalay,Mandalay,KBZPay,mmk,9,4200
+437,2026-03-14,Tea Mix,Beverage,Yangon,Pathein,Cash,ks,2,1800
+438,2026-03-14,Coffee Mix,Beverage,Mandalay,Meiktila,WavePay,mmk,4,2200
+439,2026-03-15,Detergent,Household,Mandalay,Meiktila,KBZPay,mmk,9,4200
+440,2026-03-15,Tea Mix,Beverage,Mandalay,Mandalay,Cash,ks,2,1800
+441,2026-03-15,Coffee Mix,Beverage,Yangon,Pathein,WavePay,mmk,4,2200
+442,2026-03-15,Cooking Oil,Grocery,Mandalay,Meiktila,KBZPay,ks,6,13500
+443,2026-03-15,Soft Drink,Beverage,Mandalay,Mandalay,Cash,mmk,8,1200
+444,2026-03-15,Toothpaste,Household,,Pathein,WavePay,ks,10,2500
+445,2026-03-16,Cooking Oil,Grocery,Yangon,Pathein,KBZPay,ks,6,13500
+446,2026-03-16,Soft Drink,Beverage,Mandalay,Meiktila,Cash,mmk,8,1200
+447,2026-03-16,Toothpaste,Household,Mandalay,Mandalay,WavePay,ks,10,2500
+448,2026-03-16,Biscuit,Food,Yangon,Pathein,KBZPay,mmk,3,1100
+449,2026-03-16,Green Tea,Beverage,Mandalay,Meiktila,Cash,ks,5,2100
+450,2026-03-16,Bottled Water,Beverage,Mandalay,Mandalay,WavePay,mmk,7,600
+451,2026-03-17,Biscuit,Food,Mandalay,Mandalay,,mmk,3,1100
+452,2026-03-17,Green Tea,Beverage,Yangon,Pathein,Cash,ks,5,2100
+453,2026-03-17,Bottled Water,Beverage,Mandalay,Meiktila,WavePay,mmk,7,600
+454,2026-03-17,Peanut Oil,Grocery,Mandalay,Mandalay,KBZPay,ks,9,14500
+455,2026-03-17,Detergent,Household,Yangon,Pathein,Cash,mmk,2,4200
+456,2026-03-17,Tea Mix,Beverage,Mandalay,Meiktila,WavePay,ks,4,1800
+457,2026-03-18,Peanut Oil,Grocery,Mandalay,Meiktila,KBZPay,ks,9,14500
+458,2026-03-18,Detergent,Household,Mandalay,Mandalay,Cash,mmk,2,4200
+459,2026-03-18,Tea Mix,Beverage,Yangon,Pathein,WavePay,ks,4,1800
+460,2026-03-18,Coffee Mix,Beverage,Mandalay,Meiktila,KBZPay,mmk,6,2200
+461,2026-03-18,Cooking Oil,Grocery,Mandalay,Mandalay,Cash,ks,8,13500
+462,2026-03-18,Soft Drink,Beverage,Yangon,Pathein,WavePay,mmk,10,1200
+463,2026-03-19,Coffee Mix,Beverage,Yangon,Pathein,KBZPay,mmk,6,2200
+464,2026-03-19,Cooking Oil,Grocery,Mandalay,Meiktila,Cash,ks,8,13500
+465,2026-03-19,Soft Drink,Beverage,Mandalay,Mandalay,WavePay,mmk,10,1200
+466,2026-03-19,Toothpaste,Household,Yangon,Pathein,KBZPay,ks,3,2500
+467,2026-03-19,Biscuit,Food,Mandalay,Meiktila,Cash,mmk,5,1100
+468,2026-03-19,Green Tea,Beverage,Mandalay,Mandalay,WavePay,ks,7,2100
+469,2026-03-20,Toothpaste,Household,Mandalay,Mandalay,KBZPay,ks,3,2500
+470,2026-03-20,Biscuit,Food,Yangon,Pathein,Cash,mmk,5,1100
+471,2026-03-20,Green Tea,Beverage,Mandalay,Meiktila,WavePay,ks,7,2100
+472,2026-03-20,Bottled Water,Beverage,Mandalay,Mandalay,KBZPay,mmk,9,600
+473,2026-03-20,Peanut Oil,Grocery,Yangon,Pathein,Cash,ks,2,14500
+474,2026-03-20,Detergent,Household,Mandalay,Meiktila,WavePay,mmk,4,4200
+475,2026-03-21,Bottled Water,Beverage,Mandalay,Meiktila,KBZPay,mmk,9,600
+476,2026-03-21,Peanut Oil,Grocery,Mandalay,Mandalay,Cash,ks,2,14500
+477,2026-03-21,Detergent,Household,Yangon,,WavePay,mmk,4,4200
+478,2026-03-21,Tea Mix,Beverage,Mandalay,Meiktila,KBZPay,ks,6,1800
+479,2026-03-21,Coffee Mix,Beverage,Mandalay,Mandalay,Cash,mmk,8,2200
+480,2026-03-21,Cooking Oil,Grocery,Yangon,Pathein,WavePay,ks,10,13500
+481,2026-03-22,Tea Mix,Beverage,,Pathein,KBZPay,ks,6,1800
+482,2026-03-22,Coffee Mix,Beverage,Mandalay,Meiktila,Cash,mmk,8,2200
+483,2026-03-22,Cooking Oil,Grocery,Mandalay,Mandalay,WavePay,ks,10,13500
+484,2026-03-22,Soft Drink,Beverage,Yangon,Pathein,KBZPay,mmk,3,1200
+485,2026-03-22,Toothpaste,Household,Mandalay,Meiktila,Cash,ks,5,2500
+486,2026-03-22,Biscuit,Food,Mandalay,Mandalay,WavePay,mmk,7,1100
+487,2026-03-23,Soft Drink,Beverage,Mandalay,Mandalay,KBZPay,mmk,3,1200
+488,2026-03-23,Toothpaste,Household,Yangon,Pathein,Cash,ks,5,2500
+489,2026-03-23,Biscuit,Food,Mandalay,Meiktila,WavePay,mmk,7,1100
+490,2026-03-23,Green Tea,Beverage,Mandalay,Mandalay,KBZPay,ks,9,2100
+491,2026-03-23,Bottled Water,Beverage,Yangon,Pathein,Cash,mmk,2,600
+492,2026-03-23,Peanut Oil,Grocery,Mandalay,Meiktila,,ks,4,14500
+493,2026-03-24,Green Tea,Beverage,Mandalay,Meiktila,KBZPay,ks,9,2100
+494,2026-03-24,Bottled Water,Beverage,Mandalay,Mandalay,Cash,mmk,2,600
+495,2026-03-24,Peanut Oil,Grocery,Yangon,Pathein,WavePay,ks,4,14500
+496,2026-03-24,Detergent,Household,Mandalay,Meiktila,KBZPay,mmk,6,4200
+497,2026-03-24,Tea Mix,Beverage,Mandalay,Mandalay,Cash,ks,8,1800
+498,2026-03-24,Coffee Mix,Beverage,Yangon,Pathein,WavePay,mmk,10,2200
+499,2026-03-25,Detergent,Household,Yangon,Pathein,KBZPay,mmk,6,4200
+500,2026-03-25,Tea Mix,Beverage,Mandalay,Meiktila,Cash,ks,8,1800
+501,2026-03-25,Coffee Mix,Beverage,Mandalay,Mandalay,WavePay,mmk,10,2200
+502,2026-03-25,Cooking Oil,Grocery,Yangon,Pathein,KBZPay,ks,3,13500
+503,2026-03-25,Soft Drink,Beverage,Mandalay,Meiktila,Cash,mmk,5,1200
+504,2026-03-25,Toothpaste,Household,Mandalay,Mandalay,WavePay,ks,7,2500
+505,2026-03-26,Cooking Oil,Grocery,Mandalay,Mandalay,KBZPay,ks,3,13500
+506,2026-03-26,Soft Drink,Beverage,Yangon,Pathein,Cash,mmk,5,1200
+507,2026-03-26,Toothpaste,Household,Mandalay,Meiktila,WavePay,ks,7,2500
+508,2026-03-26,Biscuit,Food,Mandalay,Mandalay,KBZPay,mmk,9,1100
+509,2026-03-26,Green Tea,Beverage,Yangon,Pathein,Cash,ks,2,2100
+510,2026-03-26,Bottled Water,Beverage,Mandalay,Meiktila,WavePay,mmk,4,600
+511,2026-03-27,Biscuit,Food,Mandalay,Meiktila,KBZPay,mmk,9,1100
+512,2026-03-27,Green Tea,Beverage,Mandalay,Mandalay,Cash,ks,2,2100
+513,2026-03-27,Bottled Water,Beverage,Yangon,Pathein,WavePay,mmk,4,600
+514,2026-03-27,Peanut Oil,Grocery,Mandalay,Meiktila,KBZPay,ks,6,14500
+515,2026-03-27,Detergent,Household,Mandalay,Mandalay,Cash,mmk,8,4200
+516,2026-03-27,Tea Mix,Beverage,Yangon,Pathein,WavePay,ks,10,1800
+517,2026-03-28,Peanut Oil,Grocery,Yangon,Pathein,KBZPay,ks,6,14500
+518,2026-03-28,Detergent,Household,,Meiktila,Cash,mmk,8,4200
+519,2026-03-28,Tea Mix,Beverage,Mandalay,Mandalay,WavePay,ks,10,1800
+520,2026-03-28,Coffee Mix,Beverage,Yangon,Pathein,KBZPay,mmk,3,2200
+521,2026-03-28,Cooking Oil,Grocery,Mandalay,Meiktila,Cash,ks,5,13500
+522,2026-03-28,Soft Drink,Beverage,Mandalay,Mandalay,WavePay,mmk,7,1200
